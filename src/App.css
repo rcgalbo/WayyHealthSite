@@ -1,38 +1,237 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&family=Pacifico&display=swap");
+
+.Navigation * {
+  margin: 0;
+  padding: 0;
+}
+
+.Navigation {
+  font-family: "Noto Sans", sans-serif;;
+}
+
+.Navigation .nav-bar {
+  padding: 10px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+
+.Navigation .nav-logo {
+  width: 60px;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+.Navigation .nav-title {
+  font-size: 31.25px;
+  color: #8743A3;
+}
+
+.Navigation .title-link {
+  text-decoration: None;
+}
+
+.Navigation .right-align {
+  margin-left: auto;
+}
+
+.Navigation .nav-link {
+  display: inline-block;
+  margin-right: 30px;
+  text-decoration: none;
+  color: #363636;
+  font-size: 25px;
+}
+
+.Navigation .nav-link:hover {
+  text-decoration: underline;
+  color: #363636;
+}
+
+
+.Navigation .sign-up-button {
+  padding: 20px 40px;
+  font-size: 20px;
+  color: #363636;
+  background-color: #cba5da;
+  border: #cba5da;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.Navigation .sign-up-button:hover,
+.Navigation .sign-up-button:active {
+  cursor: pointer;
+  background-color: #e0c9e9;
+}
+
+.Home * {
+  margin: 0;
+  padding: 0;
+}
+
+.Home {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.Home .container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.Home header {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 40px;
+  margin: 48px 0px;
+}
+
+.Home .home-img {
+  width: 100%;
+  align-self: center;
+}
+
+.Home .wayy-title {
+  font-size: 48.83px;
+  color: #363636;
+  margin-bottom: 24px;
+}
+
+.Home .wayy-h2 {
+  font-size: 39.06px;
+  margin-bottom: 24px;
+}
+
+.Home .wayy-span {
+  color: #fcaa5f;
+  font-family: "Pacifico", cursive;
+}
+
+.Home .wayy-description {
+  font-size: 25px;
+  margin-bottom: 24px;
+}
+
+.About * {
+  margin: 0;
+  padding: 0;
+}
+
+.About .container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+.About header {
+  margin: 48px 0px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 40px
+}
+
+.About .about-header-img {
+  width: 100%;
+}
+
+.About .about-header-content {
+  color: #363636;
+}
+
+.About .about-header-title {
+  font-size: 39.06px;
+}
+
+.About .about-header-text {
+  font-size: 20px;
+}
+
+.SignUp * {
+  margin: 0;
+  padding: 0;
+}
+
+.SignUp .container {
+  width: 960px;
+  margin: 48px auto;
+}
+
+.SignUp .sign-up-img {
+  width: 500px;
+  display: block;
+  margin: 48px auto;
+}
+
+.Form form {
+  position: relative;
+  width: 740px;
+  height: 498px;
+  margin: 0 auto;
+  padding: 1em;
+  box-sizing: border-box;
+  
+  display: grid;
+  gap: 40px 0px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3, 1em);
+}
+
+.Form input {
+  width: 100%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.Form .form-field {
+  display: flex;
+  align-items: center;
+}
+
+.Form .field-name {
+  font-size: 25px;
+  margin-right: 30px;
+}
+
+.Form .form-button-container {
+  margin-top: 40px;
+  grid-column: 1 / -1;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Form .form-submit-button {
+  padding: 20px 40px;
+  font-size: 20px;
+  color: #363636;
+  background-color: #cba5da;
+  border: #cba5da;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Form .form-submit-button:hover,
+.Form .form-submit-button:active {
+  cursor: pointer;
+  background-color: #e0c9e9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ThankYou * {
+  margin: 0;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.ThankYou .container {
+  width: 960px;
+  margin: 48px auto; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ThankYou .content {
+  text-align: center;
+}
+
+.ThankYou .content img {
+  width: 200px;
+  margin-bottom: 40px;
 }
