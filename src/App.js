@@ -5,6 +5,7 @@ import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import SignUp from "./components/pages/SignUp";
 import ThankYou from "./components/pages/ThankYou";
+import ForTherapists from "./components/pages/ForTherapists";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="sign-up" element={<SignUp />} />
           <Route path="thank-you" element={<ThankYou />} />
+          <Route path="for-therapists" element={<ForTherapists />} />
         </Route>
       </Routes>
     </BrowserRouter>

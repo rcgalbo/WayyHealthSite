@@ -1,8 +1,17 @@
+/* type scale */
+/* 8.19 / 10.24 / 12.8 / 16 / 20 / 25 / 31.25 / 39.06 / 48.83 */
+/* spacing scale */
+/* 2 / 4 / 8 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&family=Pacifico&display=swap");
+
+
+
 
 .Navigation * {
   margin: 0;
   padding: 0;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .Navigation {
@@ -21,6 +30,7 @@
   width: 60px;
   margin-left: 30px;
   margin-right: 20px;
+  border-radius: 5px;
 }
 
 .Navigation .nav-title {
@@ -58,6 +68,7 @@
   border: #cba5da;
   text-transform: uppercase;
   border-radius: 5px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
 }
 
 .Navigation .sign-up-button:hover,
@@ -66,13 +77,29 @@
   background-color: #e0c9e9;
 }
 
+.Navigation .toggle-button {
+  margin-left: auto;
+  cursor: pointer;
+  background: transparent;;
+  border: none;
+  font-size: 39.06px;
+}
+
+.Navigation .menu-nav {
+  display: none;
+}
+
+.Navigation .show-menu {
+  margin: auto;
+  display: block;
+  width: 100%;
+  list-style: none;
+  margin-left: 30px;
+}
+
 .Home * {
   margin: 0;
   padding: 0;
-}
-
-.Home {
-  font-family: "Noto Sans", sans-serif;
 }
 
 .Home .container {
@@ -84,12 +111,15 @@
   display: grid;
   grid-template-columns: 2fr 3fr;
   gap: 40px;
-  margin: 48px 0px;
+  margin-top: 48px;
+  margin-bottom: 96px;
 }
 
 .Home .home-img {
   width: 100%;
   align-self: center;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
 }
 
 .Home .wayy-title {
@@ -113,6 +143,39 @@
   margin-bottom: 24px;
 }
 
+.Home .home-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 128px;
+}
+
+.Home .detail-card {
+  background-color: #e0c9e9;
+  color: #363636;
+  padding: 16px;
+  border-radius: 5px;
+  height: 300px;
+  align-items: center;
+}
+
+.Home .detail-card h2 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.Home .home-details-icon {
+  margin-right: 8px;
+}
+
+.Home .detail-card p {
+  padding: 16px;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
 .About * {
   margin: 0;
   padding: 0;
@@ -123,7 +186,6 @@
   margin: 0 auto;
 }
 
-
 .About header {
   margin: 48px 0px;
   display: grid;
@@ -133,6 +195,12 @@
 
 .About .about-header-img {
   width: 100%;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+}
+
+.About .about-wayy-health {
+  color:#fcaa5f
 }
 
 .About .about-header-content {
@@ -141,10 +209,34 @@
 
 .About .about-header-title {
   font-size: 39.06px;
+  margin-bottom: 24px;
 }
 
 .About .about-header-text {
   font-size: 20px;
+}
+
+.About .about-content h2 {
+  font-size: 25px;
+  margin-bottom: 16px;
+}
+
+.About .about-content p {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.About .about-content-mission {
+  margin-bottom: 48px;
+}
+
+.About .about-content li {
+  font-size: 16px;
+}
+
+.About .about-content-activities {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .SignUp * {
@@ -161,6 +253,8 @@
   width: 500px;
   display: block;
   margin: 48px auto;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
 }
 
 .Form form {
@@ -209,6 +303,7 @@
   border: #cba5da;
   text-transform: uppercase;
   border-radius: 5px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
 }
 
 .Form .form-submit-button:hover,
@@ -234,4 +329,111 @@
 .ThankYou .content img {
   width: 200px;
   margin-bottom: 40px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+}
+
+
+.Footer footer {
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.Footer .footer-crisi {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .Navigation .title-link {
+    display: none;
+  }
+
+  .Navigation .right-align {
+    visibility: hidden;
+  }
+
+  .Home .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .Home header {
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 48px;
+    margin-bottom: 96px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .Home .home-details {
+    grid-template-columns: 1fr;
+  }
+
+  .Home .detail-card {
+    margin: 0 10px;
+  }
+
+  .About .container {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .About header {
+    margin: 48px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px
+  }
+
+  .about .about-header-img {
+    width: 100%;
+    margin-right: 10px
+  }
+
+  .About .about-content-activities {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
+  .About .about-content-activities li {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .SignUp .container {
+    width: 90%;
+    margin: 48px auto;
+  }
+
+  .Form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Form .field-name {
+    margin: 0;
+  }
+
+  .Form input {
+    margin: 0;
+  }
+
+  .ThankYou .container {
+    width: 100%;
+    margin: 48px auto; 
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .Navigation .toggle-button {
+    display: none;
+  }
 }
